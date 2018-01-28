@@ -11,15 +11,17 @@
     <ScrollView>
         <StackLayout Padding="20,0">
             
-            <Label Text="Xamarin Forms!" TextColor="DeepPink" FontSize="40"/>
+            <!--<Label Text="Xamarin Forms!" TextColor="DeepPink" FontSize="40"/>
             <Label Text="GIF" TextColor="DodgerBlue" FontSize="40" />
 
-            <ff:CachedImage x:Name="Gif" Source="resource://FfImageLoadingApp.gif.gif" />
+            <ff:CachedImage x:Name="Gif" Source="resource://FfImageLoadingApp.gif.gif"/>-->
 
             <Label Text="SVG" TextColor="DodgerBlue" FontSize="40"/>
-            <ffSvg:SvgCachedImage Source="resource://FfImageLoadingApp.svg.svg"/>
+			<ffSvg:SvgCachedImage x:Name="CachedImage" Source="resource://FfImageLoadingApp.svg.svg" WidthRequest="100" HeightRequest="100" ReplaceStringMap="{Binding ReplaceMap, Mode=TwoWay}"/>
+			  <Button Clicked="Button_OnClicked" Text="Update Color"></Button>
+	        <!--ReplaceStringMap="{Binding ReplaceMap}"/>-->
 
-            <Label Text="Blurred" TextColor="DodgerBlue" FontSize="40"/>
+            <!--<Label Text="Blurred" TextColor="DodgerBlue" FontSize="40"/>
             <ff:CachedImage Source="resource://FfImageLoadingApp.img.jpg">
                 <ff:CachedImage.Transformations>
                     <ffTransformations:BlurredTransformation Radius="200" />
@@ -38,7 +40,7 @@
                 <ff:CachedImage.Transformations>
                     <ffTransformations:GrayscaleTransformation />
                 </ff:CachedImage.Transformations>
-            </ff:CachedImage>
+            </ff:CachedImage>-->
 
         </StackLayout>
     </ScrollView>

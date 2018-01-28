@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using FFImageLoading;
 
 namespace FfImageLoadingApp.UWP
 {
@@ -58,7 +59,18 @@ namespace FfImageLoadingApp.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                Xamarin.Forms.Forms.Init(e);
+	            FFImageLoading.Forms.WinUWP.CachedImageRenderer.Init();
+
+	            var config = new FFImageLoading.Config.Configuration()
+	            {
+		            VerboseLogging = false,
+		            VerbosePerformanceLogging = false,
+		            VerboseMemoryCacheLogging = false,
+		            VerboseLoadingCancelledLogging = false,
+		            //Logger = new CustomLogger(),
+	            };
+	            ImageService.Instance.Initialize(config);
+				Xamarin.Forms.Forms.Init(e);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

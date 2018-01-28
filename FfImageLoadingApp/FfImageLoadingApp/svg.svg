@@ -1,6 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" height="256" width="256" viewBox="0 0 256 256">
-  <g>
-    <path id="path1" transform="rotate(0,128,128) translate(0,25.3359985351563) scale(8,8)  " fill="#FFB71000" d="M5.9810181,16.29601L13.981018,16.29601 13.981018,19.175983 5.9810181,19.175983z M20.716003,14.688009L23.143982,14.688009C25.60199,14.688009,27.658997,16.552999,28.197998,19.055988L15.661987,19.055988C16.202026,16.552999,18.257019,14.688009,20.716003,14.688009z M5.9810181,11.495995L13.981018,11.495995 13.981018,14.374992 5.9810181,14.374992z M21.929993,7.007991C23.736023,7.007991 25.197021,8.4730169 25.197021,10.274987 25.197021,12.08001 23.736023,13.542991 21.929993,13.542991 20.126038,13.542991 18.664001,12.08001 18.664001,10.274987 18.664001,8.4730169 20.126038,7.007991 21.929993,7.007991z M5.9810181,6.6950032L13.981018,6.6950032 13.981018,9.5750067 5.9810181,9.5750067z M3.223999,3.3330054L3.223999,22.554979 28.890015,22.554979 28.890015,3.3330054z M0,0L32,0 32,25.666 0,25.666z" />
-  </g>
+<?xml version="1.0" standalone="yes"?>
+
+<svg version="1.1" viewBox="0.0 0.0 323.09186351706035 244.251968503937" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<clipPath id="p.0">
+		<path d="m0 0l323.09186 0l0 244.25197l-323.09186 0l0 -244.25197z" clip-rule="nonzero"></path>
+	</clipPath>
+	<g clip-path="url(#p.0)">
+		<!--10 smallest-->
+		<path fill="#FILLCOLOR10" d="m11.052493 185.50656l44.818897 0l0 47.149612l-44.818897 0z" fill-rule="evenodd"></path>
+		<!--<path stroke="#000000" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m11.052493 185.50656l44.818897 0l0 47.149612l-44.818897 0z" fill-rule="evenodd"></path>-->
+
+		<!--20-->
+		<path fill="#FILLCOLOR20" d="m74.97638 156.13387l44.818893 0l0 76.53543l-44.818893 0z" fill-rule="evenodd"></path>
+		<!--<path stroke="#000000" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m74.97638 156.13387l44.818893 0l0 76.53543l-44.818893 0z" fill-rule="evenodd"></path>-->
+
+		<!--30-->
+		<path fill="#FILLCOLOR30" d="m138.90027 118.25984l44.818893 0l0 114.4252l-44.818893 0z" fill-rule="evenodd"></path>
+		<!--<path stroke="#000000" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m138.90027 118.25984l44.818893 0l0 114.4252l-44.818893 0z" fill-rule="evenodd"></path>-->
+
+		<!--40-->
+		<path fill="#FILLCOLOR40" d="m202.82414 66.47244l44.81891 0l0 166.20473l-44.81891 0z" fill-rule="evenodd"></path>
+		<!--<path stroke="#000000" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m202.82414 66.47244l44.81891 0l0 166.20473l-44.81891 0z" fill-rule="evenodd"></path>-->
+
+		<!--50 highest-->
+		<path fill="#FILLCOLOR50" d="m266.74802 10.818897l44.81891 0l0 221.85828l-44.81891 0z" fill-rule="evenodd"></path>
+		<!--<path stroke="#000000" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m266.74802 10.818897l44.81891 0l0 221.85828l-44.81891 0z" fill-rule="evenodd"></path>-->
+	</g>
 </svg>
+
