@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+
+<svg version="1.1" viewBox="0.0 0.0 323.09186351706035 244.251968503937" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<clipPath id="p.0">
+		<path d="m0 0l323.09186 0l0 244.25197l-323.09186 0l0 -244.25197z" clip-rule="nonzero"></path>
+	</clipPath>
+	<g clip-path="url(#p.0)">
+		<!--10 smallest-->
+		<path fill="#FILLCOLOR10" d="m11.052493 185.50656l44.818897 0l0 47.149612l-44.818897 0z" fill-rule="evenodd"></path>
+		<!--<path stroke="#000000" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m11.052493 185.50656l44.818897 0l0 47.149612l-44.818897 0z" fill-rule="evenodd"></path>-->
+
+		<!--20-->
+		<path fill="#FILLCOLOR20" d="m74.97638 156.13387l44.818893 0l0 76.53543l-44.818893 0z" fill-rule="evenodd"></path>
+		<!--<path stroke="#000000" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m74.97638 156.13387l44.818893 0l0 76.53543l-44.818893 0z" fill-rule="evenodd"></path>-->
+
+		<!--30-->
+		<path fill="#FILLCOLOR30" d="m138.90027 118.25984l44.818893 0l0 114.4252l-44.818893 0z" fill-rule="evenodd"></path>
+		<!--<path stroke="#000000" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m138.90027 118.25984l44.818893 0l0 114.4252l-44.818893 0z" fill-rule="evenodd"></path>-->
+
+		<!--40-->
+		<path fill="#FILLCOLOR40" d="m202.82414 66.47244l44.81891 0l0 166.20473l-44.81891 0z" fill-rule="evenodd"></path>
+		<!--<path stroke="#000000" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m202.82414 66.47244l44.81891 0l0 166.20473l-44.81891 0z" fill-rule="evenodd"></path>-->
+
+		<!--50 highest-->
+		<path fill="#FILLCOLOR50" d="m266.74802 10.818897l44.81891 0l0 221.85828l-44.81891 0z" fill-rule="evenodd"></path>
+		<!--<path stroke="#000000" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m266.74802 10.818897l44.81891 0l0 221.85828l-44.81891 0z" fill-rule="evenodd"></path>-->
+	</g>
+</svg>
+

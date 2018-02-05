@@ -11,53 +11,47 @@ namespace FfImageLoadingApp
 
 	    public MainPage()
         {
-	        var r = _random.Next(256);
-	        var g = _random.Next(256);
-	        var b = _random.Next(256);
-			
-	        int level = 30;
-			
-	        string transparentColorString = "#FFFFFF";
-	        string primaryColorString = $"#{r:X2}{g:X2}{b:X2}";
-
-			var replaceMap = new Dictionary<string, string>()
-	        {
-				//{ "#CCCCCC", "#009FE3" },
-				{ "#FILLCOLOR10", level>=10?primaryColorString:transparentColorString },
-				{ "#FILLCOLOR20", level>=20?primaryColorString:transparentColorString },
-				{ "#FILLCOLOR30", level>=30?primaryColorString:transparentColorString },
-				{ "#FILLCOLOR40", level>=40?primaryColorString:transparentColorString },
-				{ "#FILLCOLOR50", level>=50?primaryColorString:transparentColorString },
-				//{ "#TEXT", Guid.NewGuid().ToString() },
-			};
-	         						
-			InitializeComponent();
-
-	        myViewModel = new MyViewModel() { ReplaceMap = replaceMap };
+	        myViewModel = new MyViewModel() { ReplaceMap = CreateRandomReplaceMap() };
 	        BindingContext = myViewModel;
 
-			//TODO This would actually update the Replace String
-			//CachedImage.ReplaceStringMap = ReplaceMap;
-
-	        
-
-			//Gif.Source =  
-			//    ImageSource.FromUri(new Uri("https://media.giphy.com/media/l0Hlyi4ZMJI9MpFUQ/giphy.gif"));
-
+			InitializeComponent();	       	
 		}
-
+	    
 	    private void Button_OnClicked(object sender, EventArgs e)
 	    {
-		    //TODO This does not work. ReplaceMap does not support binding
-			myViewModel.ReplaceMap = new Dictionary<string, string>()
-			{
-				{ "#FILLCOLOR10", "#009FE3"},
-				{ "#FILLCOLOR20", "#009FE3"},
-				{ "#FILLCOLOR30", "#009FE3"},
-				{ "#FILLCOLOR40", "#009FE3"},
-				{ "#FILLCOLOR50", "#009FE3"},
-			};
-			
+		    //Binding does not work. ReplaceMap does not support binding
+		    myViewModel.ReplaceMap = CreateRandomReplaceMap();
+	    }
+	    private void Button2_OnClicked(object sender, EventArgs e)
+	    {
+			//Setting it directly on the control even does not work
+		    CachedImage.ReplaceStringMap = CreateRandomReplaceMap();			
 		}
-    }
+	    private void Button3_OnClicked(object sender, EventArgs e)
+	    {
+			//Setting it directly on the control and then updating the Source even doesn´t work		    
+			CachedImage.ReplaceStringMap = CreateRandomReplaceMap();
+		    CachedImage.Source = "resource://FfImageLoadingApp.svg - Copy.svg";
+		    CachedImage.Source = "resource://FfImageLoadingApp.svg.svg";
+	    }
+
+	    private Dictionary<string, string> CreateRandomReplaceMap()
+	    {
+		    var r = _random.Next(256);
+		    var g = _random.Next(256);
+		    var b = _random.Next(256);
+
+		    string randomColor = $"#{r:X2}{g:X2}{b:X2}";
+
+		    return new Dictionary<string, string>()
+		    {
+			    {"#FILLCOLOR10", randomColor},
+			    {"#FILLCOLOR20", randomColor},
+			    {"#FILLCOLOR30", randomColor},
+			    {"#FILLCOLOR40", randomColor},
+			    {"#FILLCOLOR50", randomColor},
+		    };
+	    }
+
+	}
 }

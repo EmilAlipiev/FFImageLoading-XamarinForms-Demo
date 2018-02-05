@@ -17,8 +17,14 @@
             <ff:CachedImage x:Name="Gif" Source="resource://FfImageLoadingApp.gif.gif"/>-->
 
             <Label Text="SVG" TextColor="DodgerBlue" FontSize="40"/>
-			<ffSvg:SvgCachedImage x:Name="CachedImage" Source="resource://FfImageLoadingApp.svg.svg" WidthRequest="100" HeightRequest="100" ReplaceStringMap="{Binding ReplaceMap, Mode=TwoWay}"/>
-			  <Button Clicked="Button_OnClicked" Text="Update Color"></Button>
+			<ffSvg:SvgCachedImage x:Name="CachedImage" 
+			                      Source="resource://FfImageLoadingApp.svg.svg" 
+			                      WidthRequest="100" 
+			                      HeightRequest="100" ReplaceStringMap="{Binding ReplaceMap}"/>
+
+			<Button Clicked="Button_OnClicked" Text="Update Color using Binding"/>
+			  <Button Clicked="Button2_OnClicked" Text="Update Color directly"/>
+				<Button Clicked="Button3_OnClicked" Text="Update Color directly and reset source"/>
 	        <!--ReplaceStringMap="{Binding ReplaceMap}"/>-->
 
             <!--<Label Text="Blurred" TextColor="DodgerBlue" FontSize="40"/>
